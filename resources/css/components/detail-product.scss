@@ -1,0 +1,85 @@
+@import "../variable.scss";
+.detail {
+    &__container {
+        display: flex;
+        gap: 24px;
+        &__left {
+            flex: 1;
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            flex: 1;
+            &__title {
+                font-size: 24px;
+                padding: 12px 0;
+                font-weight: bold;
+            }
+
+            &__promotion {
+                padding: 12px 0;
+                &__title {
+                    font-size: 24px;
+                    color: $primary;
+                    font-weight: bold;
+                }
+                &__list {
+                    &__item {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &__price {
+                &__contain {
+                    display: flex;
+                    padding-bottom: 8px;
+                    &__title {
+                        font-size: 20px;
+                        line-height: 100%;
+                        padding-right: 8px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    &__money {
+                        font-size: 24px;
+                        line-height: 100%;
+                        display: flex;
+                        font-weight: bolder;
+                        align-items: center;
+                        &.old {
+                            text-decoration: line-through;
+                            color: #ccc;
+                        }
+
+                        &.new {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+
+            &__button {
+                margin-top: 12px;
+                &__href {
+                    padding: 16px;
+                    background-color: $primary;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 24px;
+                    border-radius: 12px;
+                    display: inline;
+                    border: none;
+                    transition: all 0.25;
+
+                    &:hover {
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}

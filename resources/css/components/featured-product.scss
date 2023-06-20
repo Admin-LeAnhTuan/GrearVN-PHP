@@ -1,0 +1,94 @@
+@import "../variable.scss";
+.featured {
+    padding: 20px 0;
+    &__container {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            background-color: $primary;
+            color: #fff;
+            text-align: center;
+            padding: 12px 20px;
+            align-items: center;
+            &__title {
+                margin: 0;
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            &__more {
+                font-size: 14px;
+                font-weight: bold;
+                transition: all 0.25s;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        &__wrapper {
+            &__list {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                &__item {
+                    position: relative;
+                    flex: 1;
+                    border: 1px solid #ccc;
+                    transition: all 0.5s;
+                    max-width: 19%;
+                    min-width: 19%;
+                    &:hover .featured__container__wrapper__list__item__more {
+                        opacity: 1;
+                    }
+                    &:hover {
+                        border: 1px solid #f1df8d;
+                        color: #000;
+                    }
+                    & img {
+                        width: 100%;
+                    }
+
+                    &__content {
+                        padding: 12px 20px;
+                    }
+                    &__title {
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                    }
+
+                    &__more {
+                        position: absolute;
+                        padding: 12px 8px;
+                        width: 100%;
+                        top: 55%;
+                        opacity: 0;
+                        background: none repeat scroll 0 0
+                            rgba(121, 117, 101, 0.8);
+                        transition: all 0.5s;
+                        & h6 {
+                            margin: 0;
+                            color: #fff;
+                        }
+                    }
+
+                    &__price {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: $primary;
+                        display: flex;
+                        &::after {
+                            content: "đ";
+                            font-weight: 500;
+                            text-decoration: underline;
+                            margin-left: 3px;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

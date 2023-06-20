@@ -1,0 +1,49 @@
+.login {
+    padding: 40px 0;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin: 0 auto;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__label {
+            margin: 8px 0;
+            & svg {
+                margin-right: 8px;
+            }
+        }
+
+        &__input {
+            padding: 4px 8px;
+        }
+
+        &__submit {
+            margin-top: 12px;
+        }
+    }
+
+    &__direction {
+        display: flex;
+        justify-content: center;
+
+        &__login {
+            display: flex;
+            font-weight: 600;
+            color: #428bca;
+
+            & a:first-child {
+                border-right: 1px solid #000;
+            }
+
+            & a {
+                margin: 8px 0;
+                padding: 0 8px;
+            }
+        }
+    }
+}

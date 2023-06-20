@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.banner__swiper {
+  width: 100vw;
+  position: relative;
+}
+.banner__wrapper__slide__image {
+  width: 100%;
+}
+.banner__wrapper__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.banner__wrapper__button svg {
+  width: 100%;
+}
+.banner__wrapper__button.swiper-button-next {
+  right: 50px;
+}
+.banner__wrapper__button.swiper-button-prev {
+  left: 50px;
+}
+.banner__bottom {
+  padding: 16px;
+}
+.banner__bottom__container {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+.banner__bottom__container__item {
+  flex: 1;
+  width: 100%;
+}
+.banner__bottom__container__item__image {
+  width: 100%;
+}
+
+.featured {
+  padding: 20px 0;
+}
+.featured__container__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ea1c04;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  align-items: center;
+}
+.featured__container__header__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+.featured__container__header__more {
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+.featured__container__header__more:hover {
+  color: #000;
+}
+.featured__container__wrapper__list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.featured__container__wrapper__list__item {
+  position: relative;
+  flex: 1;
+  border: 1px solid #ccc;
+  transition: all 0.5s;
+  max-width: 19%;
+  min-width: 19%;
+}
+.featured__container__wrapper__list__item:hover .featured__container__wrapper__list__item__more {
+  opacity: 1;
+}
+.featured__container__wrapper__list__item:hover {
+  border: 1px solid #f1df8d;
+  color: #000;
+}
+.featured__container__wrapper__list__item img {
+  width: 100%;
+}
+.featured__container__wrapper__list__item__content {
+  padding: 12px 20px;
+}
+.featured__container__wrapper__list__item__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.featured__container__wrapper__list__item__more {
+  position: absolute;
+  padding: 12px 8px;
+  width: 100%;
+  top: 55%;
+  opacity: 0;
+  background: none repeat scroll 0 0 rgba(121, 117, 101, 0.8);
+  transition: all 0.5s;
+}
+.featured__container__wrapper__list__item__more h6 {
+  margin: 0;
+  color: #fff;
+}
+.featured__container__wrapper__list__item__price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ea1c04;
+  display: flex;
+}
+.featured__container__wrapper__list__item__price::after {
+  content: "đ";
+  font-weight: 500;
+  text-decoration: underline;
+  margin-left: 3px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}

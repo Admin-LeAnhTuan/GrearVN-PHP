@@ -1,0 +1,44 @@
+.register {
+  padding: 40px;
+}
+.register__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.register__form__container {
+  display: flex;
+  flex-direction: column;
+}
+.register__form__input {
+  margin: 4px 0;
+  width: 100%;
+  padding: 4px 8px;
+}
+.register__form__label {
+  margin: 4px 0;
+}
+.register__form__label svg {
+  margin-right: 8px;
+}
+.register__form__submit {
+  margin-top: 20px;
+}
+.register__direction {
+  display: flex;
+  justify-content: center;
+}
+.register__direction__login {
+  display: flex;
+  font-weight: 600;
+  color: #428bca;
+}
+.register__direction__login a:first-child {
+  border-right: 1px solid #000;
+}
+.register__direction__login a {
+  margin: 8px 0;
+  padding: 0 8px;
+}

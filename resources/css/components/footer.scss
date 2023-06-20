@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f1f1f1;
+    &__container {
+        display: flex;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        &__part {
+            flex: 1;
+            color: #212529;
+            padding: 0 15px 30px;
+            &__title {
+                font-size: 24px;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            &__content {
+            }
+
+            &__list {
+                &__item {
+                }
+            }
+        }
+    }
+}

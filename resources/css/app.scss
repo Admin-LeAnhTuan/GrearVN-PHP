@@ -1,0 +1,72 @@
+@import 'node_modules/swiper/swiper';
+@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./variable.scss";
+
+
+body {
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: $font;
+}
+html,
+body {
+    @media only screen and (max-width: $breakPointMedium) {
+        width: 100vw;
+        height: 100vh;
+    }
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    // background-color: #505050;
+
+    height: 100vh;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.disable {
+    pointer-events: none;
+    background-color: #e9ecef !important;
+}
+
+.money {
+    &::after {
+        content: "đ";
+        font-weight:bolder;
+        text-decoration: underline;
+        margin-left: 3px;
+        font-size: 14px;
+        margin-bottom: 8px;
+ 
+    }
+}

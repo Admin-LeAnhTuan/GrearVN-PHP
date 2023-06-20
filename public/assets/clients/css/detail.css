@@ -1,0 +1,71 @@
+.detail__container {
+  display: flex;
+  gap: 24px;
+}
+.detail__container__left {
+  flex: 1;
+}
+.detail__container__left img {
+  width: 100%;
+}
+.detail__container__right {
+  flex: 1;
+}
+.detail__container__right__title {
+  font-size: 24px;
+  padding: 12px 0;
+  font-weight: bold;
+}
+.detail__container__right__promotion {
+  padding: 12px 0;
+}
+.detail__container__right__promotion__title {
+  font-size: 24px;
+  color: #ea1c04;
+  font-weight: bold;
+}
+.detail__container__right__promotion__list__item {
+  font-size: 20px;
+}
+.detail__container__right__price__contain {
+  display: flex;
+  padding-bottom: 8px;
+}
+.detail__container__right__price__contain__title {
+  font-size: 20px;
+  line-height: 100%;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.detail__container__right__price__contain__money {
+  font-size: 24px;
+  line-height: 100%;
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+}
+.detail__container__right__price__contain__money.old {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.detail__container__right__price__contain__money.new {
+  color: #ea1c04;
+}
+.detail__container__right__button {
+  margin-top: 12px;
+}
+.detail__container__right__button__href {
+  padding: 16px;
+  background-color: #ea1c04;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 12px;
+  display: inline;
+  border: none;
+  transition: all 0.25;
+}
+.detail__container__right__button__href:hover {
+  color: #ccc;
+}

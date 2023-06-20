@@ -1,0 +1,32 @@
+.success {
+  margin: 20px 0;
+}
+.success__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success__container__header svg {
+  font-size: 28px;
+  color: #fff;
+  background-color: #28a745;
+  border-radius: 50%;
+  padding: 28px;
+  transform: translateX(100%);
+}
+.success__container__header__title {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.success__container__content__text {
+  font-weight: bold;
+}
+.success__container__content__back {
+  text-align: center;
+  margin-top: 20px;
+}
+.success__container__content__back a {
+  display: inline;
+  border: 1px solid #ccc;
+  padding: 16px;
+}

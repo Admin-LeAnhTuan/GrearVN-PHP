@@ -1,0 +1,85 @@
+.cart {
+  padding: 32px 0;
+}
+.cart__container__header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cart__container__table {
+  width: 100%;
+}
+.cart__container__table thead {
+  border: 1px solid #333;
+}
+.cart__container__table thead th {
+  text-align: center;
+  border: 1px solid #333;
+}
+.cart__container__table tbody {
+  border: 1px solid #333;
+  text-align: center;
+}
+.cart__container__table tbody tr {
+  border: 1px solid #333;
+}
+.cart__container__table tbody tr td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+.cart__container__table tbody tr td textarea {
+  font-size: 20px;
+  padding: 12px;
+  width: 95%;
+  margin: 8px 20px;
+}
+.cart__container__overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  background: rgba(33, 37, 41, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.cart__container__overlay.popup {
+  opacity: 1;
+  pointer-events: initial;
+}
+.cart__container__confirm {
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.cart__container__confirm.popup {
+  opacity: 1;
+  pointer-events: initial;
+}
+.cart__container__button {
+  margin-top: 20px;
+  text-align: right;
+}
+.cart__container__button__pay {
+  padding: 12px;
+  background-color: #ea1c04;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  display: inline;
+  border: none;
+  transition: all 0.25;
+  cursor: pointer;
+}

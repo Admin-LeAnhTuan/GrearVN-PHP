@@ -1,0 +1,114 @@
+.manage__container {
+  padding: 40px;
+}
+.manage__container__crud__form {
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.manage__container__crud__form.popup {
+  opacity: 1;
+  pointer-events: initial;
+}
+.manage__container__function {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.manage__container__table {
+  width: 100%;
+  border: solid 1px #000;
+}
+.manage__container__table thead {
+  border: solid 1px #000;
+}
+.manage__container__table thead tr {
+  border: solid 1px #000;
+}
+.manage__container__table thead tr th {
+  border: solid 1px #000;
+  text-align: center;
+}
+.manage__container__table tbody tr td {
+  border: solid 1px #000;
+  text-align: center;
+  padding: 8px 0;
+}
+.manage__overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  background: rgba(33, 37, 41, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.manage__overlay.popup {
+  opacity: 1;
+  pointer-events: initial;
+}
+.manage__logout {
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.manage__logout.popup {
+  opacity: 1;
+  pointer-events: initial;
+}
+.manage__logout__title {
+  padding-bottom: 12px;
+}
+.manage__logout__content {
+  padding-bottom: 12px;
+}
+.manage__logout__confirm {
+  display: flex;
+  justify-content: space-evenly;
+}
+.manage__change {
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.manage__change.popup, .manage__change.popup .manage__container__crud__form {
+  opacity: 1;
+  pointer-events: initial;
+}
+.manage__change__title {
+  padding-bottom: 12px;
+}
+.manage__change__content {
+  padding-bottom: 12px;
+}
+.manage__change__confirm {
+  display: flex;
+  justify-content: space-evenly;
+}

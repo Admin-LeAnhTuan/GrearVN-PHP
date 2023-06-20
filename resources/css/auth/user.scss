@@ -1,0 +1,122 @@
+.user {
+    &__container {
+        padding: 40px;
+        &__table {
+            width: 100%;
+            border: solid 1px #000;
+
+            & thead {
+                border: solid 1px #000;
+                & tr {
+                    border: solid 1px #000;
+
+                    & th {
+                        border: solid 1px #000;
+
+                        text-align: center;
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        border: solid 1px #000;
+                        text-align: center;
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__overlay {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+        background: rgba(33, 37, 41, 0.6);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+
+        &.popup {
+            opacity: 1;
+            pointer-events: initial;
+        }
+    }
+
+    &__logout {
+        width: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        background-color: #fff;
+        padding: 40px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+
+        &.popup {
+            opacity: 1;
+            pointer-events: initial;
+        }
+
+        &__title {
+            padding-bottom: 12px;
+        }
+
+        &__content {
+            padding-bottom: 12px;
+        }
+
+        &__confirm {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__change {
+        width: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        background-color: #fff;
+        padding: 40px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+
+        &.popup {
+            opacity: 1;
+            pointer-events: initial;
+        }
+
+        &__title {
+            padding-bottom: 12px;
+        }
+
+        &__content {
+            padding-bottom: 12px;
+
+            &__list {
+            }
+
+            &__option {
+            }
+
+            &__select {
+            }
+        }
+
+        &__confirm {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
